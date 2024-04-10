@@ -1,22 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom'
+import React from 'react'
 
-function Home() {
-  const [completed, setCompleted] = useState(false);
-  const [tarefa, setTarefa] = useState('');
 
-  useEffect(() => {
-    if (completed) {
-        setTarefa(<span style={{ color: 'pink' }}>Parabéns! Você concluiu a tarefa!</span>);
-    }
-  }, [completed]);
-  return (
-    <div>
-      <h1>Tarefa</h1>
-      <h3 className="pink-text">{tarefa}</h3>
-      <p>Conclua a tarefa</p>
-      <button onClick={() => setCompleted(true)}>Concluir Tarefa</button>
-    </div>
-  );
+
+const Home = () => {
+    let navigate = useNavigate()
+    return (
+
+        <div>
+            <h2 className="text-slate-900 text-5xl  m-4">Home</h2>
+            <div>
+                <button type='submit'
+                    className='hover:underline mx-4'
+                    onClick={() => { navigate('/login') }}>
+                    Login useNavigate
+                </button>
+                <Link to='/login' className='hover:underline mx-4'>Login por Link</Link>
+            </div>
+
+        </div>
+
+    )
 }
 
-export default Home;
+export default Home
