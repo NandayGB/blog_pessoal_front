@@ -1,13 +1,22 @@
-import React from 'react';
-import './Home.css';
+import React, { useState, useEffect } from 'react';
 
-function Home(){
-    return (
-        <>
-            <h1 className="titulo">Home</h1>
-            <img src="https://br.pinterest.com/pin/638033472230413559/" alt="Imagem Tela Inicial" className="img"/>
-        </>
-    );
+function Home() {
+  const [completed, setCompleted] = useState(false);
+  const [tarefa, setTarefa] = useState('');
+
+  useEffect(() => {
+    if (completed) {
+        setTarefa(<span style={{ color: 'pink' }}>Parabéns! Você concluiu a tarefa!</span>);
+    }
+  }, [completed]);
+  return (
+    <div>
+      <h1>Tarefa</h1>
+      <h3 className="pink-text">{tarefa}</h3>
+      <p>Conclua a tarefa</p>
+      <button onClick={() => setCompleted(true)}>Concluir Tarefa</button>
+    </div>
+  );
 }
 
 export default Home;
