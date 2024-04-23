@@ -1,10 +1,11 @@
-import Postagem  from "./Postagem";
+import Tema from './Tema';
+import Usuario from './Usuario';
 
-export default interface Usuario {
+export default interface Postagem {
   id: number;
-  nome: string;
-  usuario: string;
-  foto: string;
-  senha: string;
-  postagem?: Postagem | null;
+  titulo: string;
+  texto: string;
+  data: string;
+  tema: Tema | null;
+  usuario: Usuario | null;
 }
