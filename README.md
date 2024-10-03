@@ -35,6 +35,12 @@ export default {
 
 Bem-vindo ao repositório do meu blog pessoal! Este blog foi criado como parte do programa da Generation e é um espaço onde compartilho minhas ideias, pensamentos e aprendizados.
 
+![Untitled (12)](https://github.com/user-attachments/assets/a07db11b-7ddf-4fbf-8290-bd0330129c55)
+
+
+![Untitled (13)](https://github.com/user-attachments/assets/86310ed8-c963-45f7-a283-d35438fcdc5a)
+
+
 ## Visão Geral 🌟
 
 Este blog foi desenvolvido utilizando [HTML, CSS, JavaScript,TypeScript,React]. 
@@ -50,3 +56,5 @@ Implementação de Service: Foi desenvolvido um service com os métodos GetAll, 
 Páginas de Categoria 📚
 GetAll: Agora é possível visualizar todas as categorias disponíveis em uma página dedicada.
 Post/Put/Delete: Implementadas as funcionalidades de criação, atualização e exclusão de categorias, incluindo componentes e lógica correspondentes.
+
+
